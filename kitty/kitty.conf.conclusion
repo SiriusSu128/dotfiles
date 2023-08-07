@@ -1,0 +1,50 @@
+# For unknown reasons, the conclusion version of kitty.conf does not work with the function that map mouse left click to copy_to_clipboard action.
+
+Mouse actions {{{
+# Mouse action bindings with pasting from clipboard
+mouse_map right click ungrabbed paste_from_clipboard
+
+# Mouse action bindings with copying to clipboard & opening links
+mouse_map left click ungrabbed mouse_handle_click copy_to_clipboard link prompt
+}}}
+
+# Font family
+font_family      JetBrains Mono Nerd Font
+bold_font        JetBrains Mono Nerd Font Medium
+italic_font      JetBrains Mono Nerd Font Italic
+bold_italic_font JetBrains Mono Nerd Font Medium Italic
+
+# Font size
+font_size 15.0
+
+# Tab style
+tab_bar_edge bottom
+tab_bar_margin_height 0.0 4.0
+# These tab styles are available: fade separator powerline custom hidden
+tab_bar_style powerline
+tab_bar_min_tabs 2
+tab_title_template "{activity_symbol} {index} {tab.active_exe}"
+
+# Tab switching 
+map ctrl+shift+1 goto_tab 1
+map ctrl+shift+2 goto_tab 2
+map ctrl+shift+3 goto_tab 3
+map ctrl+shift+4 goto_tab 4
+
+# Some copying functions
+copy_on_selection yes
+
+paste_actions quote-urls-at-prompt
+
+strip_trailing_spaces Always
+
+# Close confirmation when closing windows
+confirm_os_window_close 0
+
+# Keybindings with clipboard integration 
+map ctrl+c copy_to_clipboard
+
+map ctrl+v paste_from_clipboard       
+
+# Theme settings
+include current-theme.conf
