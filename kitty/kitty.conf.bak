@@ -1760,7 +1760,7 @@ confirm_os_window_close 0
 #: Copy to clipboard
 
 # map kitty_mod+c copy_to_clipboard
-# map ctrl+c       copy_to_clipboard
+map ctrl+c       copy_to_clipboard
 
 #::  There is also a copy_or_interrupt action that can be optionally
 #::  mapped to Ctrl+C. It will copy only if there is a selection and
@@ -2409,6 +2409,6 @@ map ctrl+v       paste_from_clipboard
 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Material Dark Hard
+# Gruvbox Light Soft
 include current-theme.conf
 # END_KITTY_THEME
